@@ -13,88 +13,88 @@ return [
 
     // Setup form fields
     'setup' => [
-        'email'            => 'بريد إلكتروني',
+        'email'            => 'Email',
         'username'         => 'Username',
-        'password'         => 'كلمة السر',
-        'site_name'        => 'اسم الموقع',
-        'site_domain'      => 'عنوان النطاق',
-        'site_timezone'    => 'إختر منطقتك الزمنية',
-        'site_locale'      => 'اختر اللغة',
-        'enable_google2fa' => 'تفعيل التحقق الثنائي من Google',
+        'password'         => 'Password',
+        'site_name'        => 'Site Name',
+        'site_domain'      => 'Site Domain',
+        'site_timezone'    => 'Select your timezone',
+        'site_locale'      => 'Select your language',
+        'enable_google2fa' => 'Enable Google Two Factor Authentication',
         'cache_driver'     => 'Cache Driver',
         'queue_driver'     => 'Queue Driver',
         'session_driver'   => 'Session Driver',
         'mail_driver'      => 'Mail Driver',
-        'mail_host'        => 'إستضافة البريد الإلكتروني',
+        'mail_host'        => 'Mail Host',
         'mail_address'     => 'Mail From Address',
-        'mail_username'    => 'اسم البريد الإلكتروني',
-        'mail_password'    => 'كلمة السر للبريد الإلكتروني',
+        'mail_username'    => 'Mail Username',
+        'mail_password'    => 'Mail Password',
     ],
 
     // Login form fields
     'login' => [
-        'login'         => 'إسم المستخدم أو البريد الإلكتروني',
-        'email'         => 'بريد إلكتروني',
-        'password'      => 'كلمة السر',
-        '2fauth'        => 'رمز التحقق',
-        'invalid'       => 'اسم المستخدم أو كلمة المرور غير صحيحة',
-        'invalid-token' => 'الرمز غير صحيح',
-        'cookies'       => 'يجب عليك تفعيل الكوكيز لتسجيل الدخول.',
-        'rate-limit'    => 'تم إجتياز الحد المسموح به.',
-        'remember_me'   => 'تذكرني',
+        'login'         => 'Username or Email',
+        'email'         => 'Email',
+        'password'      => 'Password',
+        '2fauth'        => 'Authentication Code',
+        'invalid'       => 'Invalid username or password',
+        'invalid-token' => 'Invalid token',
+        'cookies'       => 'You must enable cookies to login.',
+        'rate-limit'    => 'Rate limit exceeded.',
+        'remember_me'   => 'Remember me',
     ],
 
     // Incidents form fields
     'incidents' => [
-        'name'               => 'الاسم',
-        'status'             => 'الحالة',
-        'component'          => 'المكون',
+        'name'               => 'Name',
+        'status'             => 'Status',
+        'component'          => 'Component',
         'component_status'   => 'Component Status',
-        'message'            => 'رسالة',
-        'message-help'       => 'يمكنك إستخدام الـ Markdown.',
-        'occurred_at'        => 'متى ظهرت هذه الحالة؟',
-        'notify_subscribers' => 'تنبيه المشتركين؟',
+        'message'            => 'Message',
+        'message-help'       => 'You may also use Markdown.',
+        'occurred_at'        => 'When did this incident occur?',
+        'notify_subscribers' => 'Notify subscribers?',
         'notify_disabled'    => 'Due to scheduled maintenance, notifications about this incident or its components will be suppressed.',
-        'visibility'         => 'ظهور الحالة',
-        'stick_status'       => 'تثبيت الحالة',
-        'stickied'           => 'مثبت',
-        'not_stickied'       => 'غير مثبت',
-        'public'             => 'ظاهر للعامة',
-        'logged_in_only'     => 'ظاهر فقط للمستخدمين',
+        'visibility'         => 'Incident Visibility',
+        'stick_status'       => 'Stick Incident',
+        'stickied'           => 'Stickied',
+        'not_stickied'       => 'Not Stickied',
+        'public'             => 'Viewable by public',
+        'logged_in_only'     => 'Only visible to logged in users',
         'templates'          => [
-            'name'     => 'الاسم',
-            'template' => 'قالب',
-            'twig'     => 'Incident Templates can make use of the <a href="http://twig.sensiolabs.org/" target="_blank">Twig</a> templating language.',
+            'name'     => 'Name',
+            'template' => 'Template',
+            'twig'     => 'Incident Templates can make use of the <a href="https://twig.symfony.com" target="_blank">Twig</a> templating language.',
         ],
     ],
 
     'schedules' => [
-        'name'         => 'الاسم',
-        'status'       => 'الحالة',
-        'message'      => 'رسالة',
-        'message-help' => 'يمكنك إستخدام الـ Markdown.',
+        'name'         => 'Name',
+        'status'       => 'Status',
+        'message'      => 'Message',
+        'message-help' => 'You may also use Markdown.',
         'scheduled_at' => 'When is this maintenance scheduled for?',
         'completed_at' => 'When did this maintenance complete?',
         'templates'    => [
-            'name'     => 'الاسم',
-            'template' => 'قالب',
-            'twig'     => 'Incident Templates can make use of the <a href="http://twig.sensiolabs.org/" target="_blank">Twig</a> templating language.',
+            'name'     => 'Name',
+            'template' => 'Template',
+            'twig'     => 'Incident Templates can make use of the <a href="https://twig.symfony.com" target="_blank">Twig</a> templating language.',
         ],
     ],
 
     // Components form fields
     'components' => [
-        'name'        => 'الاسم',
-        'status'      => 'الحالة',
-        'group'       => 'مجموعة',
-        'description' => 'وصف',
-        'link'        => 'رابط',
-        'tags'        => 'الوسوم',
+        'name'        => 'Name',
+        'status'      => 'Status',
+        'group'       => 'Group',
+        'description' => 'Description',
+        'link'        => 'Link',
+        'tags'        => 'Tags',
         'tags-help'   => 'Comma separated.',
         'enabled'     => 'Component enabled?',
 
         'groups' => [
-            'name'                     => 'الاسم',
+            'name'                     => 'Name',
             'collapsing'               => 'Expand/Collapse options',
             'visible'                  => 'Always expanded',
             'collapsed'                => 'Collapse the group by default',
@@ -107,13 +107,13 @@ return [
 
     // Action form fields
     'actions' => [
-        'name'               => 'الاسم',
-        'description'        => 'وصف',
+        'name'               => 'Name',
+        'description'        => 'Description',
         'start_at'           => 'Schedule start time',
         'timezone'           => 'Timezone',
         'schedule_frequency' => 'Schedule frequency (in seconds)',
         'completion_latency' => 'Completion latency (in seconds)',
-        'group'              => 'مجموعة',
+        'group'              => 'Group',
         'active'             => 'Active?',
         'groups'             => [
             'name' => 'Group Name',
@@ -122,10 +122,10 @@ return [
 
     // Metric form fields
     'metrics' => [
-        'name'                     => 'الاسم',
+        'name'                     => 'Name',
         'suffix'                   => 'Suffix',
-        'description'              => 'وصف',
-        'description-help'         => 'يمكنك إستخدام الـ Markdown.',
+        'description'              => 'Description',
+        'description-help'         => 'You may also use Markdown.',
         'display-chart'            => 'Display chart on status page?',
         'default-value'            => 'Default value',
         'calc_type'                => 'Calculation of metrics',
@@ -148,26 +148,27 @@ return [
     'settings' => [
         // Application setup
         'app-setup' => [
-            'site-name'                             => 'اسم الموقع',
+            'site-name'                             => 'Site Name',
             'site-url'                              => 'Site URL',
             'display-graphs'                        => 'Display graphs on status page?',
             'about-this-page'                       => 'About this page',
             'days-of-incidents'                     => 'How many days of incidents to show?',
-            'time_before_refresh'                   => 'Status page refresh rate (in seconds).',
+            'time_before_refresh'                   => 'Status page refresh rate (in seconds)',
+            'major_outage_rate'                     => 'Major outage threshold (in %)',
             'banner'                                => 'Banner Image',
-            'banner-help'                           => "It's recommended that you upload files no bigger than 930px wide .",
+            'banner-help'                           => "It's recommended that you upload files no bigger than 930px wide",
             'subscribers'                           => 'Allow people to signup to email notifications?',
             'suppress_notifications_in_maintenance' => 'Suppress notifications when incident occurs during maintenance period?',
             'skip_subscriber_verification'          => 'Skip verifying of users? (Be warned, you could be spammed)',
             'automatic_localization'                => 'Automatically localise your status page to your visitor\'s language?',
             'enable_external_dependencies'          => 'Enable Third Party Dependencies (Google Fonts, Trackers, etc...)',
-            'show_timezone'                         => 'Show the timezone the status page is running in.',
+            'show_timezone'                         => 'Show the timezone the status page is running in',
             'only_disrupted_days'                   => 'Only show days containing incidents in the timeline?',
         ],
         'analytics' => [
             'analytics_google'       => 'Google Analytics code',
             'analytics_gosquared'    => 'GoSquared Analytics code',
-            'analytics_piwik_url'    => 'URL of your Piwik instance (without http(s)://)',
+            'analytics_piwik_url'    => 'URL of your Piwik instance',
             'analytics_piwik_siteid' => 'Piwik\'s site id',
         ],
         'localization' => [
@@ -177,8 +178,10 @@ return [
             'incident-date-format' => 'Incident timestamp format',
         ],
         'security' => [
-            'allowed-domains'      => 'Allowed domains',
-            'allowed-domains-help' => 'Comma separated. The domain set above is automatically allowed by default.',
+            'allowed-domains'           => 'Allowed domains',
+            'allowed-domains-help'      => 'Comma separated. The domain set above is automatically allowed by default.',
+            'always-authenticate'       => 'Always authenticate',
+            'always-authenticate-help'  => 'Require login to view any Cachet page',
         ],
         'stylesheet' => [
             'custom-css' => 'Custom Stylesheet',
@@ -188,7 +191,7 @@ return [
             'background-fills'        => 'Background fills (components, incidents, footer)',
             'banner-background-color' => 'Banner background color',
             'banner-padding'          => 'Banner padding',
-            'fullwidth-banner'        => 'Enable fullwidth banner?',
+            'fullwidth-banner'        => 'Enable full width banner?',
             'text-color'              => 'Text color',
             'dashboard-login'         => 'Show dashboard button in the footer?',
             'reds'                    => 'Red (used for errors)',
@@ -203,8 +206,8 @@ return [
 
     'user' => [
         'username'       => 'Username',
-        'email'          => 'بريد إلكتروني',
-        'password'       => 'كلمة السر',
+        'email'          => 'Email',
+        'password'       => 'Password',
         'api-token'      => 'API Token',
         'api-token-help' => 'Regenerating your API token will prevent existing applications from accessing Cachet.',
         'gravatar'       => 'Change your profile picture at Gravatar.',
@@ -218,12 +221,17 @@ return [
         ],
         'team' => [
             'description' => 'Invite your team members by entering their email addresses here.',
-            'email'       => 'Email #:id',
+            'email'       => 'Your Team Members Email Address',
         ],
     ],
 
     'general' => [
         'timezone' => 'Select Timezone',
+    ],
+
+    'seo' => [
+        'title'        => 'SEO Title',
+        'description'  => 'SEO Description',
     ],
 
     // Buttons
@@ -237,7 +245,7 @@ return [
     'cancel'         => 'Cancel',
     'remove'         => 'Remove',
     'invite'         => 'Invite',
-    'signup'         => 'سجل',
+    'signup'         => 'Sign Up',
     'manage_updates' => 'Manage Updates',
 
     // Other

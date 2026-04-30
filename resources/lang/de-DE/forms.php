@@ -33,7 +33,7 @@ return [
 
     // Login form fields
     'login' => [
-        'login'         => 'Username oder E-Mail',
+        'login'         => 'Nutzername oder E-Mail',
         'email'         => 'E-Mail',
         'password'      => 'Passwort',
         '2fauth'        => 'Authentifizierungscode',
@@ -49,12 +49,12 @@ return [
         'name'               => 'Name',
         'status'             => 'Status',
         'component'          => 'Komponente',
-        'component_status'   => 'Component Status',
+        'component_status'   => 'Komponentenstatus',
         'message'            => 'Nachricht',
         'message-help'       => 'Sie können auch Markdown verwenden.',
         'occurred_at'        => 'Wann ist dieser Vorfall aufgetreten?',
         'notify_subscribers' => 'Abonnenten benachrichtigen',
-        'notify_disabled'    => 'Due to scheduled maintenance, notifications about this incident or its components will be suppressed.',
+        'notify_disabled'    => 'Aufgrund von Wartungsarbeiten werden Benachrichtigungen über diesen Vorfall oder seiner Komponenten unterdrückt.',
         'visibility'         => 'Ereignis Sichtbarkeit',
         'stick_status'       => 'Vorfall anpinnen',
         'stickied'           => 'Angepinnt',
@@ -64,7 +64,7 @@ return [
         'templates'          => [
             'name'     => 'Name',
             'template' => 'Vorlage',
-            'twig'     => 'Ereignis Vorlagen können den <a href="http://twig.sensiolabs.org/" target="_blank">Twig</a> Syntax nutzen.',
+            'twig'     => 'Ereignis-Vorlagen können den <a href="https://twig.symfony.com" target="_blank">Twig</a> Syntax nutzen.',
         ],
     ],
 
@@ -78,7 +78,7 @@ return [
         'templates'    => [
             'name'     => 'Name',
             'template' => 'Vorlage',
-            'twig'     => 'Ereignis Vorlagen können den <a href="http://twig.sensiolabs.org/" target="_blank">Twig</a> Syntax nutzen.',
+            'twig'     => 'Ereignis-Vorlagen können den <a href="https://twig.symfony.com" target="_blank">Twig</a> Syntax nutzen.',
         ],
     ],
 
@@ -91,7 +91,7 @@ return [
         'link'        => 'Link',
         'tags'        => 'Schlagwörter',
         'tags-help'   => 'Durch Kommata trennen.',
-        'enabled'     => 'Component enabled?',
+        'enabled'     => 'Komponente aktiv?',
 
         'groups' => [
             'name'                     => 'Name',
@@ -153,21 +153,22 @@ return [
             'display-graphs'                        => 'Graphen auf der Statusseite anzeigen?',
             'about-this-page'                       => 'Über diese Seite',
             'days-of-incidents'                     => 'Wie viele Tage mit Vorfällen sollen gezeigt werden?',
-            'time_before_refresh'                   => 'Aktualisierungsrate der Statusseite (in Sekunden).',
+            'time_before_refresh'                   => 'Aktualisierungsrate der Statusseite (in Sekunden)',
+            'major_outage_rate'                     => 'Grenzwert für schwerwiegende Ausfälle (in %)',
             'banner'                                => 'Banner Bild',
-            'banner-help'                           => 'Es wird empfohlen, dass Sie keine Dateien die breiter als 930 Pixel sind hochladen .',
+            'banner-help'                           => 'Es wird empfohlen, dass Sie keine Dateien, die breiter als 930 Pixel sind, hochladen',
             'subscribers'                           => 'Personen die Anmeldung für E-Mail-Benachrichtigung erlauben?',
-            'suppress_notifications_in_maintenance' => 'Suppress notifications when incident occurs during maintenance period?',
+            'suppress_notifications_in_maintenance' => 'Möchten Sie Benachrichtigungen über einen Vorfall während des Zeitraumes der Wartungsarbeiten unterdrücken?',
             'skip_subscriber_verification'          => 'Verifizierung der Nutzer überspringen? (Warnung, du könntest gespammt werden)',
             'automatic_localization'                => 'Die Status-Seite automatisch auf die Sprache deiner Besucher anpassen?',
             'enable_external_dependencies'          => 'Drittanbieter Abhängigkeiten erlauben (Google Schriftarten, Tracker, etc...)',
-            'show_timezone'                         => 'Zeitzone in der sich die Status-Seite befindet anzeigen.',
+            'show_timezone'                         => 'Zeitzone in der sich die Status-Seite befindet anzeigen',
             'only_disrupted_days'                   => 'Im Verlauf nur Tage mit Vorfällen anzeigen?',
         ],
         'analytics' => [
             'analytics_google'       => 'Google Analytics Code',
             'analytics_gosquared'    => 'GoSquared Analytics Code',
-            'analytics_piwik_url'    => 'URL der Piwik-Instanz (ohne http(s)://)',
+            'analytics_piwik_url'    => 'URL der Piwik-Instanz',
             'analytics_piwik_siteid' => 'Piwik\'s Seiten-ID',
         ],
         'localization' => [
@@ -177,8 +178,10 @@ return [
             'incident-date-format' => 'Ereignis Uhrzeit Format',
         ],
         'security' => [
-            'allowed-domains'      => 'Erlaubte Domains',
-            'allowed-domains-help' => 'Durch Kommata trennen. Die oben genannte Domain ist standardmäßig erlaubt.',
+            'allowed-domains'           => 'Erlaubte Domains',
+            'allowed-domains-help'      => 'Durch Kommata trennen. Die oben genannte Domain ist standardmäßig erlaubt.',
+            'always-authenticate'       => 'Immer anmelden',
+            'always-authenticate-help'  => 'Anmeldung für alle Cachet Seiten erzwingen',
         ],
         'stylesheet' => [
             'custom-css' => 'Benutzerdefiniertes Stylesheet',
@@ -188,7 +191,7 @@ return [
             'background-fills'        => 'Hintergrunddateien (Komponenten, Vorfälle, Footer)',
             'banner-background-color' => 'Banner Background Color',
             'banner-padding'          => 'Banner Padding',
-            'fullwidth-banner'        => 'Enable fullwidth banner?',
+            'fullwidth-banner'        => 'Banner über komplette Breite?',
             'text-color'              => 'Schriftfarbe',
             'dashboard-login'         => 'Dashboard-Button im Footer anzeigen?',
             'reds'                    => 'Rot (Genutzt für Fehler)',
@@ -207,7 +210,7 @@ return [
         'password'       => 'Passwort',
         'api-token'      => 'API Token',
         'api-token-help' => 'Wenn sie ihren API-Token neu generieren, können bestehende Anwendungen nicht mehr auf Cachet zugreifen.',
-        'gravatar'       => 'Change your profile picture at Gravatar.',
+        'gravatar'       => 'Ändern Sie Ihr Profilbild bei Gravatar.',
         'user_level'     => 'Benutzerebene',
         'levels'         => [
             'admin' => 'Admin',
@@ -217,13 +220,18 @@ return [
             'help' => 'Die Zwei-Faktor-Authentifizierung erhöht die Sicherheit Ihres Kontos. Sie benötigen <a href="https://support.google.com/accounts/answer/1066447?hl=en">Google Authenticator</a> oder eine ähnliche App auf Ihrem Mobilgerät. Beim Anmelden werden sie aufgefordert, einen Token einzugeben, der von der App generiert wird.',
         ],
         'team' => [
-            'description' => 'Invite your team members by entering their email addresses here.',
-            'email'       => 'Email #:id',
+            'description' => 'Laden Sie Ihre Teammitglieder ein, indem Sie deren E-Mail-Adressen hier eingeben.',
+            'email'       => 'E-Mail-Adresse des Teammitgliedes',
         ],
     ],
 
     'general' => [
         'timezone' => 'Zeitzone wählen',
+    ],
+
+    'seo' => [
+        'title'        => 'SEO Title',
+        'description'  => 'SEO Description',
     ],
 
     // Buttons

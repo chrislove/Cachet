@@ -12,119 +12,137 @@
 return [
     // Components
     'components' => [
-        'last_updated' => 'Darrera actualització :timestamp',
+        'last_updated' => 'Last updated :timestamp',
         'status'       => [
-            0 => 'Desconegut',
-            1 => 'Operatiu',
-            2 => 'Problemes de rendiment',
-            3 => 'Interrupció parcial',
-            4 => 'Interrupció major',
+            0 => 'Unknown',
+            1 => 'Operational',
+            2 => 'Performance Issues',
+            3 => 'Partial Outage',
+            4 => 'Major Outage',
         ],
         'group' => [
-            'other' => 'Altres components',
+            'other' => 'Other Components',
         ],
+        'select_all'   => 'Select All',
+        'deselect_all' => 'Deselect All',
     ],
 
     // Incidents
     'incidents' => [
-        'none'         => 'No s\'han registrat incidents',
-        'past'         => 'Incidents anteriors',
-        'stickied'     => 'Incidents fixats',
-        'scheduled'    => 'Interrupció programada',
-        'scheduled_at' => ', programat',
-        'posted'       => 'Publicat :timestamp',
+        'none'         => 'No incidents reported',
+        'past'         => 'Past Incidents',
+        'stickied'     => 'Stickied Incidents',
+        'scheduled'    => 'Maintenance',
+        'scheduled_at' => ', scheduled :timestamp',
+        'posted'       => 'Posted :timestamp by :username',
         'posted_at'    => 'Posted at :timestamp',
         'status'       => [
-            1 => 'Investigant',
-            2 => 'Identificat',
-            3 => 'En observació',
-            4 => 'Resolt',
+            1 => 'Investigating',
+            2 => 'Identified',
+            3 => 'Watching',
+            4 => 'Fixed',
         ],
     ],
 
     // Schedule
     'schedules' => [
         'status' => [
-            0 => 'Propers',
-            1 => 'En curs',
-            2 => 'Completar',
+            0 => 'Upcoming',
+            1 => 'In Progress',
+            2 => 'Complete',
         ],
     ],
 
     // Service Status
     'service' => [
-        'good'  => '[0,1] Sistema en funcionament | [2, Inf] Tots els sistemes estan en funcionament',
-        'bad'   => '[0,1] Actualment el sistema està experimentant problemes| [2, Inf] Alguns sistemes estan experimentant problemes',
-        'major' => '[0,1] El servei està experimentant una interrupció major| [2, Inf] Alguns sistemes estan experimentant una interrupció major',
+        'good'  => '[0,1]System operational|[2,*]All systems are operational',
+        'bad'   => '[0,1]The system is experiencing issues|[2,*]Some systems are experiencing issues',
+        'major' => '[0,1]The system is experiencing major issues|[2,*]Some systems are experiencing major issues',
     ],
 
     'api' => [
-        'regenerate' => 'Regenerau la clau de l\'API',
-        'revoke'     => 'Revocau la clau de l\'API',
+        'regenerate' => 'Regenerate API Key',
+        'revoke'     => 'Revoke API Key',
     ],
 
     // Metrics
     'metrics' => [
         'filter' => [
-            'last_hour' => 'Darrera hora',
-            'hourly'    => 'Darreres 12 hores',
-            'weekly'    => 'Setmana',
-            'monthly'   => 'Mes',
+            'last_hour' => 'Last Hour',
+            'hourly'    => 'Last 12 Hours',
+            'weekly'    => 'Week',
+            'monthly'   => 'Month',
         ],
     ],
 
     // Subscriber
     'subscriber' => [
-        'subscribe'   => 'Subscriviu-vos per rebre les darreres actualitzacions',
-        'unsubscribe' => 'Unsubscribe at :link',
-        'button'      => 'Subscriviu-vos',
-        'manage'      => [
-            'no_subscriptions' => 'Actualment estau subscrits a totes les actualitzacions.',
-            'my_subscriptions' => 'Actualment estau subscrits a les següents actualitzacions.',
+        'subscribe'           => 'Subscribe to status changes and incident updates',
+        'unsubscribe'         => 'Unsubscribe',
+        'button'              => 'Subscribe',
+        'manage_subscription' => 'Manage subscription',
+        'manage'              => [
+            'notifications'       => 'Notifications',
+            'notifications_for'   => 'Manage notifications for',
+            'no_subscriptions'    => 'You\'re currently subscribed to all updates.',
+            'update_subscription' => 'Update Subscription',
+            'my_subscriptions'    => 'You\'re currently subscribed to the following updates.',
+            'manage_at_link'      => 'Manage your subscriptions at :link',
         ],
         'email' => [
-            'subscribe'          => 'Subscriviu-vos a les actualitzacions del correu electrònic.',
-            'subscribed'         => 'Heu estat subscrits a les actualitzacions del correu electrònic. Per favor, consultau el vostre correu electrònic per confirmar la subscripció.',
-            'verified'           => 'La vostra subscripció al correu electrònic ha estat confirmada. Gràcies!',
-            'manage'             => 'Gestionar la teva subscripció',
-            'unsubscribe'        => 'Des-subscriviu-vos.',
-            'unsubscribed'       => 'La vostra subscripció del correu electrònic ha estat cancel·lada.',
-            'failure'            => 'Alguna cosa ha anat malament en el procés de subscripció.',
-            'already-subscribed' => 'No pot subscriure\'s :email perquè ja està subscrit.',
+            'manage_subscription' => 'We\'ve sent you an email, please click the link to manage your subscription',
+            'subscribe'           => 'Subscribe to email updates.',
+            'subscribed'          => 'You\'ve been subscribed to email notifications, please check your email to confirm your subscription.',
+            'updated-subscribe'   => 'You\'ve succesfully updated your subscriptions.',
+            'verified'            => 'Your email subscription has been confirmed. Thank you!',
+            'manage'              => 'Manage your subscription',
+            'unsubscribe'         => 'Unsubscribe from email updates.',
+            'unsubscribed'        => 'Your email subscription has been cancelled.',
+            'failure'             => 'Something went wrong with the subscription.',
+            'already-subscribed'  => 'Cannot subscribe :email because they\'re already subscribed.',
         ],
     ],
 
     'signup' => [
-        'title'    => 'Crea un compte',
-        'username' => 'Nom de l\'usuari',
-        'email'    => 'Correu electrònic',
-        'password' => 'Contrasenya',
-        'success'  => 'El vostre compte s\'ha creat.',
-        'failure'  => 'Alguna cosa ha anat malament amb el registre.',
+        'title'    => 'Sign Up',
+        'username' => 'Username',
+        'email'    => 'Email',
+        'password' => 'Password',
+        'success'  => 'Your account has been created.',
+        'failure'  => 'Something went wrong with the signup.',
     ],
 
     'system' => [
-        'update' => 'Hi ha una nova versió de Cachet disponible. Pots llegir la documentació sobre com actualitzar <a href="https://docs.cachethq.io/docs/updating-cachet">aquí</a>!',
+        'update' => 'There is a newer version of Cachet available. You can learn how to update <a href="https://docs.cachethq.io/docs/updating-cachet">here</a>!',
     ],
 
     // Modal
     'modal' => [
-        'close'     => 'Tanca',
+        'close'     => 'Close',
         'subscribe' => [
-            'title'  => 'Subscriure\'s als canvis dels components',
-            'body'   => 'Escrigui el seu correu electrònic per subscriure\'s a les actualitzacions dels components. Si vostè ja està registrat, ja rebrà missatges de correu per aquest component.',
-            'button' => 'Subscriviu-vos',
+            'title'  => 'Subscribe to component updates',
+            'body'   => 'Enter your email address to subscribe to updates for this component. If you\'re already subscribed, you\'ll already receive emails for this component.',
+            'button' => 'Subscribe',
+        ],
+    ],
+
+    // Meta descriptions
+    'meta' => [
+        'description' => [
+            'incident'  => 'Details and updates about the :name incident that occurred on :date',
+            'schedule'  => 'Details about the scheduled maintenance period :name starting :startDate',
+            'subscribe' => 'Subscribe to :app in order to receive updates of incidents and scheduled maintenance periods',
+            'overview'  => 'Stay up to date with the latest service updates from :app.',
         ],
     ],
 
     // Other
-    'home'            => 'Inici',
-    'description'     => 'Estigues informat de les últimes actualitzacions del servei de :app.',
-    'powered_by'      => 'Funciona amb <a href="https://cachethq.io" class="links">Cachet</a>.',
-    'timezone'        => 'Les hores es mostren en :timezone.',
-    'about_this_site' => 'Sobre aquest lloc',
+    'home'            => 'Home',
+    'powered_by'      => 'Powered by <a href="https://cachethq.io" class="links">Cachet</a>.',
+    'timezone'        => 'Times are shown in :timezone.',
+    'about_this_site' => 'About This Site',
     'rss-feed'        => 'RSS',
     'atom-feed'       => 'Atom',
-    'feed'            => 'Estat',
+    'feed'            => 'Status Feed',
 
 ];
